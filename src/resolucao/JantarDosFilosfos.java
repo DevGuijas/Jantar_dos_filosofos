@@ -10,7 +10,7 @@ public class JantarDosFilosfos {
 	private static Filosofo[] filosofos = new Filosofo[NUM_FILOSOFOS];
 	private static Semaphore[] garfos = new Semaphore[NUM_FILOSOFOS];
 
-	// Onde todo o "Bruto" do código ocorre, e local onde se encontra o contador:
+	// Onde todo o "Bruto" do código ocorre:
 	public static void main(String[] args) {
 		for (int i = 0; i < NUM_FILOSOFOS; i++) {
 			garfos[i] = new Semaphore(1); // Aqui é onde se dá inicio ao Semafóro.
